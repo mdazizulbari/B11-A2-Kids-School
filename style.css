@@ -12,15 +12,20 @@
 }
 
 /* shared styles */
-:root{
-    --orange: #FEA301;
-    --sky-blue: #01ACFD;
-    --purple: #5D58EF;
-    --cyan: #05D4DF;
-    --green: #95B226;
+:root {
+  --orange: #fea301;
+  --sky-blue: #01acfd;
+  --purple: #5d58ef;
+  --cyan: #05d4df;
+  --green: #95b226;
 }
-p{
-    font-size: 20px;
+h2 {
+  font-size: 46px;
+  font-weight: bold;
+  line-height: 57.5px;
+}
+p {
+  font-size: 20px;
 }
 a {
   text-decoration: none;
@@ -43,6 +48,11 @@ button {
   font-family: "Quicksand", serif;
 }
 
+/* body styles */
+body {
+  background: #f7f7f7;
+}
+
 /* nav styles */
 nav {
   display: flex;
@@ -63,45 +73,115 @@ nav .menu {
   display: flex;
   gap: 32px;
 }
-nav a:nth-child(1){
-    color: var(--orange);
+nav a:nth-child(1) {
+  color: var(--orange);
 }
-nav a:nth-child(2){
-    color: var(--sky-blue);
+nav a:nth-child(2) {
+  color: var(--sky-blue);
 }
-nav a:nth-child(3){
-    color: var(--cyan);
+nav a:nth-child(3) {
+  color: var(--cyan);
 }
-nav a:nth-child(4){
-    color: var(--purple);
+nav a:nth-child(4) {
+  color: var(--purple);
 }
-nav button{
-    background: var(--orange);
+nav button {
+  background: var(--orange);
 }
 
 /* hero section */
-.hero{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
 }
-.hero .content{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
-.hero h1{
-    font-size: 56px;
-    font-weight: bold;
+.hero h1 {
+  font-size: 56px;
+  font-weight: bold;
 }
-.hero h1 span{
-    color: var(--sky-blue);
+.hero h1 span {
+  color: var(--sky-blue);
 }
-.hero button{
-    width: fit-content;
+.hero button {
+  width: fit-content;
 }
 
+/* curriculum section */
+.curriculum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding: 70px 0;
+  background-image: url(assets/bg.png);
+}
+.curriculum .card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.curriculum .card-container .card {
+  padding: 52px 40px;
+  border-radius: 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+}
+.curriculum .card-container .card:nth-child(1) {
+  background: linear-gradient(to bottom, #def5ff, white 40%);
+}
+.curriculum .card-container .card:nth-child(2) {
+  background: linear-gradient(to bottom, #fff4dc, white 40%);
+}
+.curriculum .card-container .card:nth-child(3) {
+  background: linear-gradient(to bottom, #eee1ff, white 40%);
+}
+.curriculum .card-container .card img {
+    width: 136px;
+}
+.curriculum .card-container .card h4 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.curriculum .card-container .card p {
+    font-size: 15px;
+}
+.curriculum .card-container .card button {
+    background: none;
+    font-size: 15px;
+}
+.curriculum .card-container .card:nth-child(1) button {
+    color: var(--sky-blue);
+}
+.curriculum .card-container .card:nth-child(2) button {
+    color: var(--orange);
+}
+.curriculum .card-container .card:nth-child(3) button {
+    color: var(--purple);
+}
+.curriculum .icons{
+    display: flex;
+    gap: 10px;
+}
+.curriculum .icons i {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background: var(--orange);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+}
 @media screen (max-width: 390px) {
-    
 }
