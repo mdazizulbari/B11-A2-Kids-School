@@ -19,6 +19,9 @@
     --cyan: #05D4DF;
     --green: #95B226;
 }
+p{
+    font-size: 20px;
+}
 a {
   text-decoration: none;
   color: black;
@@ -74,4 +77,31 @@ nav a:nth-child(4){
 }
 nav button{
     background: var(--orange);
+}
+
+/* hero section */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.hero .content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.hero h1{
+    font-size: 56px;
+    font-weight: bold;
+}
+.hero h1 span{
+    color: var(--sky-blue);
+}
+.hero button{
+    width: fit-content;
+}
+
+@media screen (max-width: 390px) {
+    
 }
