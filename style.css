@@ -122,13 +122,18 @@ nav .fa-bars {
 }
 
 /* curriculum section */
-.curriculum {
+.curriculum{
+  background: url(assets/bg.png), linear-gradient(to top, white, #f7f7f7);
+  background-repeat: no-repeat;
+}
+.curriculum .container{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 80px;
   padding: 70px 0;
   background-image: url(assets/bg.png);
+  background-repeat: no-repeat;
 }
 .curriculum .card-container {
   display: grid;
@@ -199,12 +204,14 @@ nav .fa-bars {
 
 /* stories section */
 .stories{
+  background: url(assets/bg.png), linear-gradient(to top, #f9deae, white);
+}
+.stories .container{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 80px;
     padding: 60px 0;
-  background-image: url(assets/bg.png);
 }
 .stories .cards-container{
     display: grid;
