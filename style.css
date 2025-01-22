@@ -200,6 +200,10 @@ nav .fa-bars {
   align-items: center;
   justify-content: center;
   border-radius: 999px;
+  transition: ease .3s;
+}
+.curriculum .icons i:hover{
+    background: var(--purple);
 }
 
 /* stories section */
