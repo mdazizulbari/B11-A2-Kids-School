@@ -122,11 +122,11 @@ nav .fa-bars {
 }
 
 /* curriculum section */
-.curriculum{
+.curriculum {
   background: url(assets/bg.png), linear-gradient(to top, white, #f7f7f7);
   background-repeat: no-repeat;
 }
-.curriculum .container{
+.curriculum .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -203,57 +203,60 @@ nav .fa-bars {
 }
 
 /* stories section */
-.stories{
+.stories {
   background: url(assets/bg.png), linear-gradient(to top, #f9deae, white);
 }
-.stories .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
-    padding: 60px 0;
+.stories .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding: 60px 0;
 }
-.stories .cards-container{
-    display: grid;
-    gap: 18px;
-    grid-template-columns: 2fr 1fr 1fr;
-    align-items: center;
+.stories .cards-container {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 2fr 1fr 1fr;
+  align-items: center;
 }
-.stories .card{
-    border-radius: 16px;
-    overflow: hidden;
-    background: white;
+.stories .card {
+  border-radius: 16px;
+  overflow: hidden;
+  background: white;
 }
-.stories .card:nth-child(1){
-    grid-row: span 2;    
+.stories .card:nth-child(1) {
+  grid-row: span 2;
 }
-.stories .card img{
-    width: 100%;
+.stories .card img {
+  width: 100%;
 }
-.stories .card .content{
-    padding: 35px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.stories .card .content {
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.stories .card time{
-    background: var(--green);
-    padding: 14px 18px;
-    border-radius: 99px;
-    color: white;
-    margin-top: -65px;
-    width: fit-content;
+.stories .card time {
+  background: var(--green);
+  padding: 14px 18px;
+  border-radius: 99px;
+  color: white;
+  margin-top: -65px;
+  width: fit-content;
 }
-.stories .card:nth-child(1) time{
-    background: var(--cyan);
+.stories .card:nth-child(1) time {
+  background: var(--cyan);
 }
-.stories .card:nth-child(3) time{
-    background: var(--purple);
+.stories .card:nth-child(3) time {
+  background: var(--purple);
 }
-.stories .card .content p{
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 28px;
+.stories .card:nth-child(6) {
+  display: none;
+}
+.stories .card .content p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
 }
 
 /* footer styles */
@@ -315,9 +318,9 @@ footer .socials .icons {
 /* responsive styles */
 
 @media (max-width: 390px) {
-    body{
-        text-align: center;
-    }
+  body {
+    text-align: center;
+  }
   /* shared styles */
   h2 {
     font-size: 26px;
@@ -415,12 +418,12 @@ footer .socials .icons {
   }
 
   /* curriculum section */
-  .curriculum {
+  .curriculum .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 70px 0;
+    padding: 40px 0;
     background-image: url(assets/bg.png);
   }
   .curriculum .card-container {
@@ -471,6 +474,70 @@ footer .socials .icons {
   }
   .curriculum .icons {
     display: none;
+  }
+
+  /* stories section */
+  .stories {
+    background: url(assets/bg.png), linear-gradient(to top, #f9deae, white);
+  }
+  .stories .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+    text-align: left;
+  }
+  .stories .cards-container {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .stories .card {
+    border-radius: 16px;
+    overflow: hidden;
+    background: white;
+  }
+  .stories .card:nth-child(1) {
+    grid-row: span 1;
+  }
+  .stories .card img {
+    width: 100%;
+  }
+  .stories .card .content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .stories .card time {
+    background: var(--green);
+    padding: 6px 12px;
+    border-radius: 99px;
+    color: white;
+    margin-top: -35px;
+    width: fit-content;
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .stories .card:nth-child(1) time {
+    background: var(--green);
+  }
+  .stories .card:nth-child(2) time {
+    background: var(--purple);
+  }
+  .stories .card:nth-child(3) time {
+    background: var(--purple);
+  }
+  .stories .card:nth-child(4) time {
+    background: var(--purple);
+  }
+  .stories .card:nth-child(6) {
+    display: block;
+  }
+  .stories .card .content p {
+  display: none;
   }
 
   /* footer styles */
